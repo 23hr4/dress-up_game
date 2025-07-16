@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dress-Up Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Intro scene-->
+    <div id="intro-screen" class="screen">
+        <img src="assets/images/lale_tarlası.jpg" alt="intro-bckg">
+        <button id="start-btn"><img src="assets/images/start_button.png" alt="start-btn"></button>
+    </div>
+
+    <!--Dress-up scene-->
+    <div id="dress-up-screen" class="screen hidden">
+        <img src="assets/images/dolap.jpg" alt="dress_bckg">
+        <img src="assets/images/char.png" alt="base-char" id="character-base">
+        <div id="game_area">
+            <!--clothes panel-->
+            <div id="closet-panel">
+                <div id="categories">
+                    <!--icons-->
+                    <img src="assets/images/icon.png" alt="icon">
+                    <img src="assets/images/icon.png" alt="icon">
+                    <img src="assets/images/icon.png" alt="icon">
+                    <img src="assets/images/icon.png" alt="icon">
+                </div>
+                <div id="clothes-area">
+                    <!--clothes-->
+                    <img src="" alt="dress">
+                </div>
+            </div>
+        </div>
+        <button id="done-btn"><img src="assets/images/start_button.png" alt="done-btn"></button>
+    </div>
+
+    <!--Podium scene-->
+    <div id="podium-screen" class="screen hidden">
+        <img src="assets/images/podium.jpg" alt="podium-bckg">
+        <h1>Your Final Look</h1>
+        <div id="final-char"></div>
+        <button id="download-btn"><img src="assets/images/start_button.png" alt="download"></button>
+        <button id="restart-btn"><img src="assets/images/start_button.png" alt="restart"></button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
