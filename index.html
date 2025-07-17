@@ -1,57 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dress-Up Game</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dress-Up Game</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!--Intro scene-->
-    <div id="intro-screen" class="screen">
-        <img src="assets/images/lale_tarlası.jpg" alt="intro-bckg">
-        <button id="start-btn"><img src="assets/images/start_button.png" alt="start-btn"></button>
-    </div>
-
-    <!--Dress-up scene-->
-    <div id="dress-up-screen" class="screen hidden">
-        <img src="assets/images/dolap.jpg" alt="dress_bckg">
-        <img src="assets/images/char.png" alt="base-char" id="character-base">
-        <div id="game_area">
-            <!-- Left Closet Panel -->
-            <div id="closet-panel">
-                <div id="categories">
-                <!-- icons for tops, bottoms, etc -->
-                <img src="assets/images/icon_tops.png" alt="tops" />
-                <img src="assets/images/icon_bottoms.png" alt="bottoms" />
-                <img src="assets/images/icon_hats.png" alt="hats" />
-                </div>
-                <div id="clothes-area">
-  <div id="clothes-frame">
-    <img src="assets/images/dress1.png" alt="dress 1">
-    <img src="assets/images/dress2.png" alt="dress 2">
-    <!-- more clothes... -->
+  <!-- Intro scene -->
+  <div id="intro-screen" class="screen">
+    <button id="start-btn">
+      <img src="assets/images/start_button.png" alt="Start">
+    </button>
   </div>
-</div>
 
-            </div>
-
-            <!-- Character -->
-            <img src="assets/images/char.png" alt="base-char" id="character-base">
+  <!-- Dress-up scene -->
+  <div id="dress-up-screen" class="screen hidden">
+    <div id="game_area">
+      <!-- Closet Panel -->
+      <div id="closet-panel">
+        <div id="categories">
+          <img src="assets/images/icon_tops.png" alt="tops" />
+          <img src="assets/images/icon_bottoms.png" alt="bottoms" />
+          <img src="assets/images/icon_hats.png" alt="hats" />
         </div>
+        <div id="clothes-area">
+          <div id="clothes-frame">
+            <img src="assets/images/dress1.png" alt="dress 1" />
+            <img src="assets/images/dress2.png" alt="dress 2" />
+          </div>
+        </div>
+      </div>
 
-        <button id="done-btn"><img src="assets/images/start_button.png" alt="done-btn"></button>
+      <!-- Character -->
+      <img src="assets/images/char.png" alt="base-char" id="character-base" />
     </div>
 
-    <!--Podium scene-->
-    <div id="podium-screen" class="screen hidden">
-        <img src="assets/images/podium.jpg" alt="podium-bckg">
-        <h1>Your Final Look</h1>
-        <div id="final-char"></div>
-        <button id="download-btn"><img src="assets/images/start_button.png" alt="download"></button>
-        <button id="restart-btn"><img src="assets/images/start_button.png" alt="restart"></button>
-    </div>
+    <button id="done-btn">
+      <img src="assets/images/start_button.png" alt="Done">
+    </button>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- Podium scene -->
+  <div id="podium-screen" class="screen hidden">
+    <h1>Your Final Look</h1>
+    <div id="final-char"></div>
+    <button id="download-btn">
+      <img src="assets/images/start_button.png" alt="Download">
+    </button>
+    <button id="restart-btn">
+      <img src="assets/images/start_button.png" alt="Restart">
+    </button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
